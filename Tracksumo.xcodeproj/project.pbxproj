@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53EB1BD2EAE0DCAEDFB972CA /* Pods_Tracksumo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9718A7BEFF4FEC78B2FE89F /* Pods_Tracksumo.framework */; };
 		F2D2C3DF1E045A510087431E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D2C3DE1E045A510087431E /* AppDelegate.swift */; };
 		F2D2C3E11E045A510087431E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D2C3E01E045A510087431E /* ViewController.swift */; };
 		F2D2C3E41E045A510087431E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D2C3E21E045A510087431E /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B6B2BCB21D1B3FFC52D8D63 /* Pods-Tracksumo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tracksumo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tracksumo/Pods-Tracksumo.release.xcconfig"; sourceTree = "<group>"; };
+		A9718A7BEFF4FEC78B2FE89F /* Pods_Tracksumo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tracksumo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C844BF543122A8AD98ACD6F9 /* Pods-Tracksumo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tracksumo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tracksumo/Pods-Tracksumo.debug.xcconfig"; sourceTree = "<group>"; };
 		F2D2C3DB1E045A510087431E /* Tracksumo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracksumo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D2C3DE1E045A510087431E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2D2C3E01E045A510087431E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53EB1BD2EAE0DCAEDFB972CA /* Pods_Tracksumo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F27ACDC4FD7600A3B698FC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9718A7BEFF4FEC78B2FE89F /* Pods_Tracksumo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA80A4B793FD430FB9AA62E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C844BF543122A8AD98ACD6F9 /* Pods-Tracksumo.debug.xcconfig */,
+				1B6B2BCB21D1B3FFC52D8D63 /* Pods-Tracksumo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F2D2C3D21E045A510087431E = {
 			isa = PBXGroup;
 			children = (
 				F2D2C3DD1E045A510087431E /* Tracksumo */,
 				F2D2C3DC1E045A510087431E /* Products */,
+				CA80A4B793FD430FB9AA62E9 /* Pods */,
+				5F27ACDC4FD7600A3B698FC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2D2C3F01E045A510087431E /* Build configuration list for PBXNativeTarget "Tracksumo" */;
 			buildPhases = (
+				D56AF18D7B06364A28124D1C /* [CP] Check Pods Manifest.lock */,
 				F2D2C3D71E045A510087431E /* Sources */,
 				F2D2C3D81E045A510087431E /* Frameworks */,
 				F2D2C3D91E045A510087431E /* Resources */,
+				88D67A5D08DC2DA249F6249B /* [CP] Embed Pods Frameworks */,
+				F631FA8C9872985DBEE28843 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88D67A5D08DC2DA249F6249B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tracksumo/Pods-Tracksumo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D56AF18D7B06364A28124D1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F631FA8C9872985DBEE28843 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tracksumo/Pods-Tracksumo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F2D2C3D71E045A510087431E /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		F2D2C3F11E045A510087431E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C844BF543122A8AD98ACD6F9 /* Pods-Tracksumo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YZB6HYGFR3;
@@ -274,6 +350,7 @@
 		};
 		F2D2C3F21E045A510087431E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B6B2BCB21D1B3FFC52D8D63 /* Pods-Tracksumo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YZB6HYGFR3;

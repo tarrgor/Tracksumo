@@ -1,0 +1,6 @@
+framework module Pods_Tracksumo {
+  umbrella header "Pods-Tracksumo-umbrella.h"
+
+  export *
+  module * { export * }
+}
