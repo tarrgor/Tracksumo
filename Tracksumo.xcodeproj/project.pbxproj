@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		53EB1BD2EAE0DCAEDFB972CA /* Pods_Tracksumo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9718A7BEFF4FEC78B2FE89F /* Pods_Tracksumo.framework */; };
+		7BD4ABA71E049D86002661FD /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4ABA61E049D86002661FD /* PageViewController.swift */; };
+		7BD4ABA91E049DD8002661FD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4ABA81E049DD8002661FD /* SettingsViewController.swift */; };
+		7BD4ABAB1E049E27002661FD /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4ABAA1E049E27002661FD /* StatisticsViewController.swift */; };
+		7BD4ABAD1E049E75002661FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4ABAC1E049E75002661FD /* MainViewController.swift */; };
 		F2D2C3DF1E045A510087431E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D2C3DE1E045A510087431E /* AppDelegate.swift */; };
-		F2D2C3E11E045A510087431E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D2C3E01E045A510087431E /* ViewController.swift */; };
 		F2D2C3E41E045A510087431E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D2C3E21E045A510087431E /* Main.storyboard */; };
 		F2D2C3E71E045A510087431E /* Tracksumo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2D2C3E51E045A510087431E /* Tracksumo.xcdatamodeld */; };
 		F2D2C3E91E045A510087431E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D2C3E81E045A510087431E /* Assets.xcassets */; };
@@ -18,11 +21,14 @@
 
 /* Begin PBXFileReference section */
 		1B6B2BCB21D1B3FFC52D8D63 /* Pods-Tracksumo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tracksumo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tracksumo/Pods-Tracksumo.release.xcconfig"; sourceTree = "<group>"; };
+		7BD4ABA61E049D86002661FD /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		7BD4ABA81E049DD8002661FD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		7BD4ABAA1E049E27002661FD /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		7BD4ABAC1E049E75002661FD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A9718A7BEFF4FEC78B2FE89F /* Pods_Tracksumo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tracksumo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C844BF543122A8AD98ACD6F9 /* Pods-Tracksumo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tracksumo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tracksumo/Pods-Tracksumo.debug.xcconfig"; sourceTree = "<group>"; };
 		F2D2C3DB1E045A510087431E /* Tracksumo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracksumo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D2C3DE1E045A510087431E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2D2C3E01E045A510087431E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F2D2C3E31E045A510087431E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2D2C3E61E045A510087431E /* Tracksumo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tracksumo.xcdatamodel; sourceTree = "<group>"; };
 		F2D2C3E81E045A510087431E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,8 +87,11 @@
 			isa = PBXGroup;
 			children = (
 				F2D2C3DE1E045A510087431E /* AppDelegate.swift */,
-				F2D2C3E01E045A510087431E /* ViewController.swift */,
 				F2D2C3E21E045A510087431E /* Main.storyboard */,
+				7BD4ABA61E049D86002661FD /* PageViewController.swift */,
+				7BD4ABA81E049DD8002661FD /* SettingsViewController.swift */,
+				7BD4ABAA1E049E27002661FD /* StatisticsViewController.swift */,
+				7BD4ABAC1E049E75002661FD /* MainViewController.swift */,
 				F2D2C3E81E045A510087431E /* Assets.xcassets */,
 				F2D2C3EA1E045A510087431E /* LaunchScreen.storyboard */,
 				F2D2C3ED1E045A510087431E /* Info.plist */,
@@ -215,9 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2D2C3E11E045A510087431E /* ViewController.swift in Sources */,
+				7BD4ABA71E049D86002661FD /* PageViewController.swift in Sources */,
+				7BD4ABAB1E049E27002661FD /* StatisticsViewController.swift in Sources */,
 				F2D2C3DF1E045A510087431E /* AppDelegate.swift in Sources */,
+				7BD4ABAD1E049E75002661FD /* MainViewController.swift in Sources */,
 				F2D2C3E71E045A510087431E /* Tracksumo.xcdatamodeld in Sources */,
+				7BD4ABA91E049DD8002661FD /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +393,7 @@
 				F2D2C3F21E045A510087431E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
