@@ -8,6 +8,8 @@
 
 import UIKit
 
-class StatisticsViewController : UIViewController {
+class StatisticsViewController : UIViewController, Pageable {
+ 
+    let pageIndex: Int = 2
     
 }

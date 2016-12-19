@@ -8,6 +8,8 @@
 
 import UIKit
 
-class MainViewController : UIViewController {
+class MainViewController : UIViewController, Pageable {
+ 
+    let pageIndex: Int = 1
     
 }

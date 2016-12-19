@@ -8,6 +8,8 @@
 
 import UIKit
 
-class SettingsViewController : UIViewController {
+class SettingsViewController : UIViewController, Pageable {
+    
+    let pageIndex: Int = 0
     
 }
