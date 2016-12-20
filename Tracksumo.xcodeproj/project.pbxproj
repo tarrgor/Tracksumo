@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		53EB1BD2EAE0DCAEDFB972CA /* Pods_Tracksumo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9718A7BEFF4FEC78B2FE89F /* Pods_Tracksumo.framework */; };
+		7B8DE1061E09AFC0001969DE /* Tracking+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DE0FE1E09AFC0001969DE /* Tracking+CoreDataClass.swift */; };
+		7B8DE1071E09AFC0001969DE /* Tracking+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DE0FF1E09AFC0001969DE /* Tracking+CoreDataProperties.swift */; };
+		7B8DE1081E09AFC0001969DE /* PlanEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DE1001E09AFC0001969DE /* PlanEntry+CoreDataClass.swift */; };
+		7B8DE1091E09AFC0001969DE /* PlanEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DE1011E09AFC0001969DE /* PlanEntry+CoreDataProperties.swift */; };
+		7B8DE10A1E09AFC0001969DE /* Plan+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DE1021E09AFC0001969DE /* Plan+CoreDataClass.swift */; };
+		7B8DE10B1E09AFC0001969DE /* Plan+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DE1031E09AFC0001969DE /* Plan+CoreDataProperties.swift */; };
+		7B8DE10C1E09AFC0001969DE /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DE1041E09AFC0001969DE /* Activity+CoreDataClass.swift */; };
+		7B8DE10D1E09AFC0001969DE /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DE1051E09AFC0001969DE /* Activity+CoreDataProperties.swift */; };
 		7BD4ABA71E049D86002661FD /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4ABA61E049D86002661FD /* PageViewController.swift */; };
 		7BD4ABA91E049DD8002661FD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4ABA81E049DD8002661FD /* SettingsViewController.swift */; };
 		7BD4ABAB1E049E27002661FD /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4ABAA1E049E27002661FD /* StatisticsViewController.swift */; };
@@ -21,6 +29,14 @@
 
 /* Begin PBXFileReference section */
 		1B6B2BCB21D1B3FFC52D8D63 /* Pods-Tracksumo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tracksumo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tracksumo/Pods-Tracksumo.release.xcconfig"; sourceTree = "<group>"; };
+		7B8DE0FE1E09AFC0001969DE /* Tracking+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tracking+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7B8DE0FF1E09AFC0001969DE /* Tracking+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tracking+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7B8DE1001E09AFC0001969DE /* PlanEntry+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlanEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7B8DE1011E09AFC0001969DE /* PlanEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlanEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7B8DE1021E09AFC0001969DE /* Plan+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Plan+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7B8DE1031E09AFC0001969DE /* Plan+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Plan+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7B8DE1041E09AFC0001969DE /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7B8DE1051E09AFC0001969DE /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7BD4ABA61E049D86002661FD /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		7BD4ABA81E049DD8002661FD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		7BD4ABAA1E049E27002661FD /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +72,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7B8DE10E1E09AFC5001969DE /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				7B8DE0FE1E09AFC0001969DE /* Tracking+CoreDataClass.swift */,
+				7B8DE0FF1E09AFC0001969DE /* Tracking+CoreDataProperties.swift */,
+				7B8DE1001E09AFC0001969DE /* PlanEntry+CoreDataClass.swift */,
+				7B8DE1011E09AFC0001969DE /* PlanEntry+CoreDataProperties.swift */,
+				7B8DE1021E09AFC0001969DE /* Plan+CoreDataClass.swift */,
+				7B8DE1031E09AFC0001969DE /* Plan+CoreDataProperties.swift */,
+				7B8DE1041E09AFC0001969DE /* Activity+CoreDataClass.swift */,
+				7B8DE1051E09AFC0001969DE /* Activity+CoreDataProperties.swift */,
+				F2D2C3E51E045A510087431E /* Tracksumo.xcdatamodeld */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
 		CA80A4B793FD430FB9AA62E9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +118,7 @@
 		F2D2C3DD1E045A510087431E /* Tracksumo */ = {
 			isa = PBXGroup;
 			children = (
+				7B8DE10E1E09AFC5001969DE /* DataModel */,
 				F2D2C3DE1E045A510087431E /* AppDelegate.swift */,
 				F2D2C3E21E045A510087431E /* Main.storyboard */,
 				7BD4ABA61E049D86002661FD /* PageViewController.swift */,
@@ -95,7 +128,6 @@
 				F2D2C3E81E045A510087431E /* Assets.xcassets */,
 				F2D2C3EA1E045A510087431E /* LaunchScreen.storyboard */,
 				F2D2C3ED1E045A510087431E /* Info.plist */,
-				F2D2C3E51E045A510087431E /* Tracksumo.xcdatamodeld */,
 			);
 			path = Tracksumo;
 			sourceTree = "<group>";
@@ -224,11 +256,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8DE10D1E09AFC0001969DE /* Activity+CoreDataProperties.swift in Sources */,
 				7BD4ABA71E049D86002661FD /* PageViewController.swift in Sources */,
+				7B8DE10C1E09AFC0001969DE /* Activity+CoreDataClass.swift in Sources */,
+				7B8DE10A1E09AFC0001969DE /* Plan+CoreDataClass.swift in Sources */,
+				7B8DE1091E09AFC0001969DE /* PlanEntry+CoreDataProperties.swift in Sources */,
 				7BD4ABAB1E049E27002661FD /* StatisticsViewController.swift in Sources */,
+				7B8DE1061E09AFC0001969DE /* Tracking+CoreDataClass.swift in Sources */,
 				F2D2C3DF1E045A510087431E /* AppDelegate.swift in Sources */,
+				7B8DE10B1E09AFC0001969DE /* Plan+CoreDataProperties.swift in Sources */,
+				7B8DE1081E09AFC0001969DE /* PlanEntry+CoreDataClass.swift in Sources */,
 				7BD4ABAD1E049E75002661FD /* MainViewController.swift in Sources */,
 				F2D2C3E71E045A510087431E /* Tracksumo.xcdatamodeld in Sources */,
+				7B8DE1071E09AFC0001969DE /* Tracking+CoreDataProperties.swift in Sources */,
 				7BD4ABA91E049DD8002661FD /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

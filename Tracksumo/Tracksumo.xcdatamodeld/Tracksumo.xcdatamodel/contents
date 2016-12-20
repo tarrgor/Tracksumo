@@ -1,4 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16B2555" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Activity" representedClassName="Activity" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="planEntries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PlanEntry" inverseName="activity" inverseEntity="PlanEntry" syncable="YES"/>
+        <relationship name="trackings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tracking" inverseName="activity" inverseEntity="Tracking" syncable="YES"/>
+    </entity>
+    <entity name="Plan" representedClassName="Plan" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="planEntries" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="PlanEntry" inverseName="plan" inverseEntity="PlanEntry" syncable="YES"/>
+    </entity>
+    <entity name="PlanEntry" representedClassName="PlanEntry" syncable="YES" codeGenerationType="class">
+        <attribute name="plannedTime" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="activity" optional="YES" maxCount="1" deletionRule="Nullify" ordered="YES" destinationEntity="Activity" inverseName="planEntries" inverseEntity="Activity" syncable="YES"/>
+        <relationship name="plan" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Plan" inverseName="planEntries" inverseEntity="Plan" syncable="YES"/>
+    </entity>
+    <entity name="Tracking" representedClassName="Tracking" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="trackedTime" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="activity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Activity" inverseName="trackings" inverseEntity="Activity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Activity" positionX="-432" positionY="-315" width="128" height="105"/>
+        <element name="Plan" positionX="403" positionY="-279" width="128" height="75"/>
+        <element name="PlanEntry" positionX="151" positionY="-297" width="128" height="90"/>
+        <element name="Tracking" positionX="117" positionY="-144" width="128" height="90"/>
+    </elements>
 </model>
