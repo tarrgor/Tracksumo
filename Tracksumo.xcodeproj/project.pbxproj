@@ -20,6 +20,12 @@
 		7BD4ABA91E049DD8002661FD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4ABA81E049DD8002661FD /* SettingsViewController.swift */; };
 		7BD4ABAB1E049E27002661FD /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4ABAA1E049E27002661FD /* StatisticsViewController.swift */; };
 		7BD4ABAD1E049E75002661FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4ABAC1E049E75002661FD /* MainViewController.swift */; };
+		F284C9ED1E09BD9700105487 /* Additional.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F284C9EC1E09BD9700105487 /* Additional.storyboard */; };
+		F284C9EF1E09BDC300105487 /* AddPlanEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F284C9EE1E09BDC300105487 /* AddPlanEntryViewController.swift */; };
+		F284C9F11E09C8C100105487 /* SelectActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F284C9F01E09C8C100105487 /* SelectActivityTableViewController.swift */; };
+		F284C9F31E09C9D300105487 /* SelectActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F284C9F21E09C9D300105487 /* SelectActivityCell.swift */; };
+		F2ACB9B21E0B054F004D8E75 /* UIViewController+Tracksumo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ACB9B11E0B054F004D8E75 /* UIViewController+Tracksumo.swift */; };
+		F2ACB9B41E0B175C004D8E75 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ACB9B31E0B175C004D8E75 /* CategoryView.swift */; };
 		F2D2C3DF1E045A510087431E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D2C3DE1E045A510087431E /* AppDelegate.swift */; };
 		F2D2C3E41E045A510087431E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D2C3E21E045A510087431E /* Main.storyboard */; };
 		F2D2C3E71E045A510087431E /* Tracksumo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2D2C3E51E045A510087431E /* Tracksumo.xcdatamodeld */; };
@@ -43,6 +49,12 @@
 		7BD4ABAC1E049E75002661FD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A9718A7BEFF4FEC78B2FE89F /* Pods_Tracksumo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tracksumo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C844BF543122A8AD98ACD6F9 /* Pods-Tracksumo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tracksumo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tracksumo/Pods-Tracksumo.debug.xcconfig"; sourceTree = "<group>"; };
+		F284C9EC1E09BD9700105487 /* Additional.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Additional.storyboard; sourceTree = "<group>"; };
+		F284C9EE1E09BDC300105487 /* AddPlanEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlanEntryViewController.swift; sourceTree = "<group>"; };
+		F284C9F01E09C8C100105487 /* SelectActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectActivityTableViewController.swift; sourceTree = "<group>"; };
+		F284C9F21E09C9D300105487 /* SelectActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectActivityCell.swift; sourceTree = "<group>"; };
+		F2ACB9B11E0B054F004D8E75 /* UIViewController+Tracksumo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Tracksumo.swift"; sourceTree = "<group>"; };
+		F2ACB9B31E0B175C004D8E75 /* CategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		F2D2C3DB1E045A510087431E /* Tracksumo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracksumo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D2C3DE1E045A510087431E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2D2C3E31E045A510087431E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,6 +109,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F2ACB9B01E0B0534004D8E75 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2ACB9B11E0B054F004D8E75 /* UIViewController+Tracksumo.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		F2D2C3D21E045A510087431E = {
 			isa = PBXGroup;
 			children = (
@@ -118,16 +138,22 @@
 		F2D2C3DD1E045A510087431E /* Tracksumo */ = {
 			isa = PBXGroup;
 			children = (
+				F2ACB9B01E0B0534004D8E75 /* Extensions */,
 				7B8DE10E1E09AFC5001969DE /* DataModel */,
 				F2D2C3DE1E045A510087431E /* AppDelegate.swift */,
 				F2D2C3E21E045A510087431E /* Main.storyboard */,
+				F284C9EC1E09BD9700105487 /* Additional.storyboard */,
 				7BD4ABA61E049D86002661FD /* PageViewController.swift */,
 				7BD4ABA81E049DD8002661FD /* SettingsViewController.swift */,
 				7BD4ABAC1E049E75002661FD /* MainViewController.swift */,
 				7BD4ABAA1E049E27002661FD /* StatisticsViewController.swift */,
+				F284C9EE1E09BDC300105487 /* AddPlanEntryViewController.swift */,
+				F284C9F01E09C8C100105487 /* SelectActivityTableViewController.swift */,
 				F2D2C3E81E045A510087431E /* Assets.xcassets */,
 				F2D2C3EA1E045A510087431E /* LaunchScreen.storyboard */,
 				F2D2C3ED1E045A510087431E /* Info.plist */,
+				F284C9F21E09C9D300105487 /* SelectActivityCell.swift */,
+				F2ACB9B31E0B175C004D8E75 /* CategoryView.swift */,
 			);
 			path = Tracksumo;
 			sourceTree = "<group>";
@@ -196,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2D2C3EC1E045A510087431E /* LaunchScreen.storyboard in Resources */,
+				F284C9ED1E09BD9700105487 /* Additional.storyboard in Resources */,
 				F2D2C3E91E045A510087431E /* Assets.xcassets in Resources */,
 				F2D2C3E41E045A510087431E /* Main.storyboard in Resources */,
 			);
@@ -261,13 +288,18 @@
 				7B8DE10C1E09AFC0001969DE /* Activity+CoreDataClass.swift in Sources */,
 				7B8DE10A1E09AFC0001969DE /* Plan+CoreDataClass.swift in Sources */,
 				7B8DE1091E09AFC0001969DE /* PlanEntry+CoreDataProperties.swift in Sources */,
+				F2ACB9B41E0B175C004D8E75 /* CategoryView.swift in Sources */,
+				F284C9EF1E09BDC300105487 /* AddPlanEntryViewController.swift in Sources */,
 				7BD4ABAB1E049E27002661FD /* StatisticsViewController.swift in Sources */,
 				7B8DE1061E09AFC0001969DE /* Tracking+CoreDataClass.swift in Sources */,
+				F2ACB9B21E0B054F004D8E75 /* UIViewController+Tracksumo.swift in Sources */,
 				F2D2C3DF1E045A510087431E /* AppDelegate.swift in Sources */,
 				7B8DE10B1E09AFC0001969DE /* Plan+CoreDataProperties.swift in Sources */,
 				7B8DE1081E09AFC0001969DE /* PlanEntry+CoreDataClass.swift in Sources */,
+				F284C9F31E09C9D300105487 /* SelectActivityCell.swift in Sources */,
 				7BD4ABAD1E049E75002661FD /* MainViewController.swift in Sources */,
 				F2D2C3E71E045A510087431E /* Tracksumo.xcdatamodeld in Sources */,
+				F284C9F11E09C8C100105487 /* SelectActivityTableViewController.swift in Sources */,
 				7B8DE1071E09AFC0001969DE /* Tracking+CoreDataProperties.swift in Sources */,
 				7BD4ABA91E049DD8002661FD /* SettingsViewController.swift in Sources */,
 			);
