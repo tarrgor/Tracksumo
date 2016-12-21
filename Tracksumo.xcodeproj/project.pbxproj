@@ -24,6 +24,7 @@
 		F284C9EF1E09BDC300105487 /* AddPlanEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F284C9EE1E09BDC300105487 /* AddPlanEntryViewController.swift */; };
 		F284C9F11E09C8C100105487 /* SelectActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F284C9F01E09C8C100105487 /* SelectActivityTableViewController.swift */; };
 		F284C9F31E09C9D300105487 /* SelectActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F284C9F21E09C9D300105487 /* SelectActivityCell.swift */; };
+		F297C3D11E0B31F200F10597 /* UIActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297C3D01E0B31F200F10597 /* UIActivityCell.swift */; };
 		F2ACB9B21E0B054F004D8E75 /* UIViewController+Tracksumo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ACB9B11E0B054F004D8E75 /* UIViewController+Tracksumo.swift */; };
 		F2ACB9B41E0B175C004D8E75 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ACB9B31E0B175C004D8E75 /* CategoryView.swift */; };
 		F2D2C3DF1E045A510087431E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D2C3DE1E045A510087431E /* AppDelegate.swift */; };
@@ -53,6 +54,7 @@
 		F284C9EE1E09BDC300105487 /* AddPlanEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlanEntryViewController.swift; sourceTree = "<group>"; };
 		F284C9F01E09C8C100105487 /* SelectActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectActivityTableViewController.swift; sourceTree = "<group>"; };
 		F284C9F21E09C9D300105487 /* SelectActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectActivityCell.swift; sourceTree = "<group>"; };
+		F297C3D01E0B31F200F10597 /* UIActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIActivityCell.swift; sourceTree = "<group>"; };
 		F2ACB9B11E0B054F004D8E75 /* UIViewController+Tracksumo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Tracksumo.swift"; sourceTree = "<group>"; };
 		F2ACB9B31E0B175C004D8E75 /* CategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		F2D2C3DB1E045A510087431E /* Tracksumo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracksumo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 				7BD4ABAA1E049E27002661FD /* StatisticsViewController.swift */,
 				F284C9EE1E09BDC300105487 /* AddPlanEntryViewController.swift */,
 				F284C9F01E09C8C100105487 /* SelectActivityTableViewController.swift */,
+				F297C3D01E0B31F200F10597 /* UIActivityCell.swift */,
 				F2D2C3E81E045A510087431E /* Assets.xcassets */,
 				F2D2C3EA1E045A510087431E /* LaunchScreen.storyboard */,
 				F2D2C3ED1E045A510087431E /* Info.plist */,
@@ -297,6 +300,7 @@
 				7B8DE10B1E09AFC0001969DE /* Plan+CoreDataProperties.swift in Sources */,
 				7B8DE1081E09AFC0001969DE /* PlanEntry+CoreDataClass.swift in Sources */,
 				F284C9F31E09C9D300105487 /* SelectActivityCell.swift in Sources */,
+				F297C3D11E0B31F200F10597 /* UIActivityCell.swift in Sources */,
 				7BD4ABAD1E049E75002661FD /* MainViewController.swift in Sources */,
 				F2D2C3E71E045A510087431E /* Tracksumo.xcdatamodeld in Sources */,
 				F284C9F11E09C8C100105487 /* SelectActivityTableViewController.swift in Sources */,
