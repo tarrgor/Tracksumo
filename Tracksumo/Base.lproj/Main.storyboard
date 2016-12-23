@@ -223,6 +223,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="endHourLabel" destination="Gx5-li-W8c" id="ktK-jH-ueP"/>
+                        <outlet property="startHourLabel" destination="DAG-TN-DqX" id="qei-yt-yJA"/>
                         <outlet property="tableView" destination="Fnf-VK-Jfh" id="o6e-SJ-lYN"/>
                     </connections>
                 </viewController>
