@@ -37,6 +37,19 @@ class SettingsViewController : UIViewController, Pageable, UITableViewDataSource
     }
     
     
+    
+    // MARK: Steppper
+    
+    @IBAction func stepperStartValueChanged(_ sender: UIStepper) {
+        
+        
+    }
+
+    
+    @IBAction func stepperEndValueChanged(_ sender: UIStepper) {
+    }
+    
+    
     let pageIndex: Int = 0
     
 }
