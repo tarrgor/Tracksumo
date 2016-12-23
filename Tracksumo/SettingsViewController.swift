@@ -13,11 +13,20 @@ class SettingsViewController : UIViewController, Pageable, UITableViewDataSource
     // tableView connection
     @IBOutlet weak var tableView: UITableView!
     
+    // hourLabels connection
+    @IBOutlet weak var startHourLabel: UILabel!
+    @IBOutlet weak var endHourLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         
         // tableView config
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        
+        // hourLabels base values
+        self.startHourLabel.text = "8:00"
+        self.endHourLabel.text = "20:00"
         
     }
     
@@ -39,14 +48,27 @@ class SettingsViewController : UIViewController, Pageable, UITableViewDataSource
     
     
     // MARK: Steppper
+    // Increasing and decreasing label values
     
     @IBAction func stepperStartValueChanged(_ sender: UIStepper) {
-        
-        
+        changeHourLabelValue(label: startHourLabel, value: sender.value)
     }
 
     
     @IBAction func stepperEndValueChanged(_ sender: UIStepper) {
+        changeHourLabelValue(label: endHourLabel, value: sender.value)
+    }
+    
+    func changeHourLabelValue(label: UILabel, value: Double) {
+
+        let dateHour = Int(value)
+        
+        if (value > Double(dateHour)) {
+            label.text = "\(dateHour):30"
+        } else {
+            label.text = "\(dateHour):00"
+        }
+        
     }
     
     
