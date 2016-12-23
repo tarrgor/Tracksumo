@@ -25,9 +25,8 @@ class SelectActivityTableViewController: UITableViewController {
   
   @IBAction func doneButtonPressed(sender: UIButton) {
     if let activity = self.selectedActivity {
-      self.dismiss(animated: true, completion: {
-        self.onSelected?(activity)
-      })
+      self.onSelected?(activity)
+      self.navigationController?.popViewController(animated: true)
     }
   }
   

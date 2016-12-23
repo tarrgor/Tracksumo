@@ -12,6 +12,9 @@ class AddPlanEntryViewController: UITableViewController {
   
   @IBOutlet weak var activityNameLbl: UILabel!
   @IBOutlet weak var activityCategoryLbl: UILabel!
+  @IBOutlet weak var timeLabel: UILabel!
+  
+  var timeInMinutes: Int = 0
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "ToSelectActivityScreen" {

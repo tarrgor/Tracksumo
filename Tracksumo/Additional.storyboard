@@ -13,7 +13,7 @@
         <!--Add Plan Entry-->
         <scene sceneID="OoG-hE-ClZ">
             <objects>
-                <tableViewController storyboardIdentifier="AddPlanEntryViewController" id="q8I-Vu-QbY" customClass="AddPlanEntryViewController" customModule="Tracksumo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="q8I-Vu-QbY" customClass="AddPlanEntryViewController" customModule="Tracksumo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Vrq-CM-T09">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,6 +141,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Plan Entry" id="dSk-B1-MPm"/>
+                    <connections>
+                        <outlet property="activityCategoryLbl" destination="uAV-cC-nDn" id="H0w-N0-P3K"/>
+                        <outlet property="activityNameLbl" destination="W86-e9-he1" id="XVE-1K-JH9"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCd-ZG-xhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -184,7 +188,7 @@
         <!--Navigation Controller-->
         <scene sceneID="6ci-qN-rnF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d2L-9u-CFI" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="AddPlanEntryViewController" automaticallyAdjustsScrollViewInsets="NO" id="d2L-9u-CFI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="d5Y-FH-CPf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
