@@ -22,7 +22,8 @@ class AddPlanEntryViewController: UITableViewController {
   }
   
   func didSelectActivity(activity: Activity) {
-    
+    activityNameLbl.text = activity.name
+    activityCategoryLbl.text = activity.category
   }
   
 }
