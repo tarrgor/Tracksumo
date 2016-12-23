@@ -9,5 +9,11 @@
 import UIKit
 
 class SelectActivityCell: UITableViewCell {
+  var activity: Activity?
   
+  func configure() {
+    if activity != nil {
+      self.textLabel?.text = activity?.name
+    }
+  }
 }

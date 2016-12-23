@@ -14,9 +14,21 @@ class SelectActivityTableViewController: UITableViewController {
   var categories: [String] = []
   var activityMap: [String:[Activity]] = [:]
   
+  var onSelected: ((Activity) -> ())?
+  
+  fileprivate var selectedActivity: Activity?
+  
   override func viewDidLoad() {
     loadDummyData()
     convertData()
+  }
+  
+  @IBAction func doneButtonPressed(sender: UIButton) {
+    if let activity = self.selectedActivity {
+      self.dismiss(animated: true, completion: {
+        self.onSelected?(activity)
+      })
+    }
   }
   
   private func loadDummyData() {
@@ -62,9 +74,10 @@ extension SelectActivityTableViewController {
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "SelectActivityCell", for: indexPath)
+    let cell = tableView.dequeueReusableCell(withIdentifier: "SelectActivityCell", for: indexPath) as! SelectActivityCell
     if let activity = activityMap[categories[indexPath.section]]?[indexPath.row] {
-      cell.textLabel?.text = activity.name!
+      cell.activity = activity
+      cell.configure()
     }
     return cell
   }
@@ -81,6 +94,20 @@ extension SelectActivityTableViewController {
 
   override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
     return 44
+  }
+  
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    if let cell = tableView.cellForRow(at: indexPath) as? SelectActivityCell {
+      cell.accessoryType = .checkmark
+      self.selectedActivity = cell.activity
+    }
+  }
+  
+  override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    if let cell = tableView.cellForRow(at: indexPath) as? SelectActivityCell {
+      cell.accessoryType = .none
+      self.selectedActivity = nil
+    }
   }
   
   func addActivity(_ section: Int) {

@@ -13,7 +13,7 @@
         <!--Add Plan Entry-->
         <scene sceneID="OoG-hE-ClZ">
             <objects>
-                <tableViewController id="q8I-Vu-QbY" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="AddPlanEntryViewController" id="q8I-Vu-QbY" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Vrq-CM-T09">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                             <tableViewSection headerTitle="Add Plan Entry" id="15D-vj-mns">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="NH7-Bd-bcO">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NH7-Bd-bcO" id="d7a-Ag-CKD">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -40,7 +40,7 @@
                                                         <color key="titleColor" red="0.74509803919999995" green="0.97254901959999995" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="pe1-oV-yVj" kind="push" id="KmR-v0-Seh"/>
+                                                        <segue destination="pe1-oV-yVj" kind="push" identifier="ToSelectActivityScreen" id="KmR-v0-Seh"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coding" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W86-e9-he1">
@@ -70,7 +70,7 @@
                                         <color key="backgroundColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="QYk-fT-Aqw">
-                                        <rect key="frame" x="0.0" y="100" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QYk-fT-Aqw" id="md0-D6-30G">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -84,7 +84,8 @@
                                                 </label>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="PFd-Bi-vYO">
                                                     <rect key="frame" x="273" y="7" width="94" height="29"/>
-                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="tintColor" red="0.74509803919999995" green="0.97254901959999995" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Er-nG-sln">
                                                     <rect key="frame" x="229" y="11" width="36" height="21"/>
@@ -105,7 +106,7 @@
                                         <color key="backgroundColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7p5-ug-EWV">
-                                        <rect key="frame" x="0.0" y="144" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="143.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7p5-ug-EWV" id="OBb-R9-cat">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -154,11 +155,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="SelectActivityCell" id="YM5-VA-MRP">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SelectActivityCell" id="YM5-VA-MRP" customClass="SelectActivityCell" customModule="Tracksumo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YM5-VA-MRP" id="yJB-54-SMw">
-                                    <rect key="frame" x="0.0" y="0.0" width="336" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -168,7 +169,13 @@
                             <outlet property="delegate" destination="pe1-oV-yVj" id="AyC-5k-CiL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Select Activity" id="ere-Sp-TfK"/>
+                    <navigationItem key="navigationItem" title="Select Activity" id="ere-Sp-TfK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="9fC-LS-8Kn">
+                            <connections>
+                                <action selector="doneButtonPressedWithSender:" destination="pe1-oV-yVj" id="dav-C9-Ndf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWF-or-37Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
