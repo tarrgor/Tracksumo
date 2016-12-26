@@ -82,10 +82,13 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="PFd-Bi-vYO">
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="240" stepValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="PFd-Bi-vYO">
                                                     <rect key="frame" x="273" y="7" width="94" height="29"/>
                                                     <color key="backgroundColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="tintColor" red="0.74509803919999995" green="0.97254901959999995" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="stepperValueChanged:" destination="q8I-Vu-QbY" eventType="valueChanged" id="5Nb-yc-pXl"/>
+                                                    </connections>
                                                 </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Er-nG-sln">
                                                     <rect key="frame" x="229" y="11" width="36" height="21"/>
@@ -116,11 +119,17 @@
                                                     <rect key="frame" x="333" y="6" width="34" height="30"/>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Save"/>
+                                                    <connections>
+                                                        <action selector="saveButtonPressed:" destination="q8I-Vu-QbY" eventType="touchUpInside" id="EIE-Vu-XTF"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDM-Gn-tOd">
                                                     <rect key="frame" x="8" y="6" width="48" height="30"/>
                                                     <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Cancel"/>
+                                                    <connections>
+                                                        <action selector="cancelButtonPressed:" destination="q8I-Vu-QbY" eventType="touchUpInside" id="ZE4-cJ-Nmt"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -144,6 +153,7 @@
                     <connections>
                         <outlet property="activityCategoryLbl" destination="uAV-cC-nDn" id="H0w-N0-P3K"/>
                         <outlet property="activityNameLbl" destination="W86-e9-he1" id="XVE-1K-JH9"/>
+                        <outlet property="timeLabel" destination="5Er-nG-sln" id="QUb-26-WsK"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCd-ZG-xhU" userLabel="First Responder" sceneMemberID="firstResponder"/>

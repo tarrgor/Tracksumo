@@ -29,4 +29,21 @@ class AddPlanEntryViewController: UITableViewController {
     activityCategoryLbl.text = activity.category
   }
   
+  @IBAction func stepperValueChanged(_ sender: UIStepper) {
+    timeInMinutes = Int(sender.value)
+    adjustTimeLabel()
+  }
+  
+  func adjustTimeLabel() {
+    let hours = timeInMinutes / 60
+    let minutes = timeInMinutes % 60
+    let minutesStr = minutes < 10 ? "0\(minutes)" : "\(minutes)"
+    timeLabel.text = "\(hours):\(minutesStr)"
+  }
+  
+  @IBAction func saveButtonPressed(_ sender: UIButton) {
+  }
+  
+  @IBAction func cancelButtonPressed(_ sender: UIButton) {
+  }
 }
