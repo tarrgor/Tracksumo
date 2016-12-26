@@ -163,7 +163,7 @@
                                 <color key="textColor" red="0.25172083560000003" green="0.99986119920000005" blue="0.41511952330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="8" maximumValue="24" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="N01-W2-WsV">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" maximumValue="24" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="N01-W2-WsV">
                                 <rect key="frame" x="265" y="563" width="94" height="29"/>
                                 <color key="backgroundColor" red="0.05913845551" green="0.059723984770000002" blue="0.059723984770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.25172083560000003" green="0.99986119920000005" blue="0.41511952330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -171,19 +171,19 @@
                                     <action selector="stepperStartValueChanged:" destination="EcU-hc-DLs" eventType="valueChanged" id="ISM-Rh-2C3"/>
                                 </connections>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAG-TN-DqX">
-                                <rect key="frame" x="221" y="567" width="36" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAG-TN-DqX">
+                                <rect key="frame" x="213" y="567" width="44" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.25172083560000003" green="0.99986119920000005" blue="0.41511952330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gx5-li-W8c">
-                                <rect key="frame" x="211.5" y="608" width="45.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gx5-li-W8c">
+                                <rect key="frame" x="211" y="608" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.25172083560000003" green="0.99986119920000005" blue="0.41511952330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" maximumValue="24" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bxM-dj-IlK">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="22" maximumValue="24" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bxM-dj-IlK">
                                 <rect key="frame" x="265" y="604" width="94" height="29"/>
                                 <color key="backgroundColor" red="0.05913845551" green="0.059723984770000002" blue="0.059723984770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.25172083560000003" green="0.99986119920000005" blue="0.41511952330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -223,6 +223,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dayEndStepper" destination="bxM-dj-IlK" id="aYq-re-xap"/>
+                        <outlet property="dayStartStepper" destination="N01-W2-WsV" id="Id8-ZY-sz6"/>
                         <outlet property="endHourLabel" destination="Gx5-li-W8c" id="ktK-jH-ueP"/>
                         <outlet property="startHourLabel" destination="DAG-TN-DqX" id="qei-yt-yJA"/>
                         <outlet property="tableView" destination="Fnf-VK-Jfh" id="o6e-SJ-lYN"/>

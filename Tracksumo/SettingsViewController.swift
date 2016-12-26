@@ -10,12 +10,21 @@ import UIKit
 
 class SettingsViewController : UIViewController, Pageable, UITableViewDataSource, UITableViewDelegate {
     
+    // UIStepper connection
+    @IBOutlet weak var dayStartStepper: UIStepper!
+    @IBOutlet weak var dayEndStepper: UIStepper!
+    
     // tableView connection
     @IBOutlet weak var tableView: UITableView!
     
     // hourLabels connection
     @IBOutlet weak var startHourLabel: UILabel!
     @IBOutlet weak var endHourLabel: UILabel!
+    
+    // UserDefaults
+    var defaults = UserDefaults.standard
+    var startHour : Date = Date()
+    var endHour : Date = Date()
     
     
     override func viewDidLoad() {
@@ -24,10 +33,13 @@ class SettingsViewController : UIViewController, Pageable, UITableViewDataSource
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
-        // hourLabels base values
-        self.startHourLabel.text = "8:00"
-        self.endHourLabel.text = "20:00"
+        // day hours config
+
+        convertDayHours()
+        saveDayHours()
         
+        print(startHour)
+        print(endHour)
     }
     
     // MARK: tableView number of rows
@@ -59,6 +71,26 @@ class SettingsViewController : UIViewController, Pageable, UITableViewDataSource
         changeHourLabelValue(label: endHourLabel, value: sender.value)
     }
     
+    // Converting hours from Double to Date
+    
+    func convertDayHours() {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .none
+        dateFormatter.timeStyle = .short
+        
+        if let checkedStartHour = startHourLabel.text {
+            startHour = dateFormatter.date(from: checkedStartHour)!
+        }
+        
+        if let checkedEndHour = endHourLabel.text {
+            endHour = dateFormatter.date(from: checkedEndHour)!
+        }
+        
+    }
+    
+    // Changing label values
+    
     func changeHourLabelValue(label: UILabel, value: Double) {
 
         let dateHour = Int(value)
@@ -68,6 +100,15 @@ class SettingsViewController : UIViewController, Pageable, UITableViewDataSource
         } else {
             label.text = "\(dateHour):00"
         }
+        
+    }
+    
+    // Saving hours to UserDefaults
+    
+    func saveDayHours() {
+        
+        defaults.set(startHour, forKey: "dayStart")
+        defaults.set(endHour, forKey: "dayEnd")
         
     }
     
