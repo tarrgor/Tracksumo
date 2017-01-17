@@ -35,11 +35,15 @@ class SettingsViewController : UIViewController, Pageable, UITableViewDataSource
         
         // day hours config
 
-        convertDayHours()
-        saveDayHours()
+        if let hour = DateHelper.timeStringToDate(string: startHourLabel.text!) {
+        startHour = hour
+        }
         
-        print(startHour)
-        print(endHour)
+        if let hour = DateHelper.timeStringToDate(string: endHourLabel.text!) {
+            endHour = hour
+        }
+        
+        saveDayHours()
     }
     
     // MARK: tableView number of rows
@@ -71,23 +75,6 @@ class SettingsViewController : UIViewController, Pageable, UITableViewDataSource
         changeHourLabelValue(label: endHourLabel, value: sender.value)
     }
     
-    // Converting hours from Double to Date
-    
-    func convertDayHours() {
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .none
-        dateFormatter.timeStyle = .short
-        
-        if let checkedStartHour = startHourLabel.text {
-            startHour = dateFormatter.date(from: checkedStartHour)!
-        }
-        
-        if let checkedEndHour = endHourLabel.text {
-            endHour = dateFormatter.date(from: checkedEndHour)!
-        }
-        
-    }
     
     // Changing label values
     
@@ -109,6 +96,15 @@ class SettingsViewController : UIViewController, Pageable, UITableViewDataSource
         
         defaults.set(startHour, forKey: "dayStart")
         defaults.set(endHour, forKey: "dayEnd")
+        
+    }
+    
+    // Loading hours from UserDefaults
+    
+    func loadDayHours() {
+        
+        startHour = defaults.value(forKey: "dayStart") as! Date
+        endHour = defaults.value(forKey: "dayEnd") as! Date
         
     }
     

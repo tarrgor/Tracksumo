@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		53EB1BD2EAE0DCAEDFB972CA /* Pods_Tracksumo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9718A7BEFF4FEC78B2FE89F /* Pods_Tracksumo.framework */; };
+		7B0457031E1185780057F038 /* DateHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0457021E1185780057F038 /* DateHelperTests.swift */; };
+		7B04570B1E1185AD0057F038 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B04570A1E1185AD0057F038 /* DateHelper.swift */; };
 		7B8DE1061E09AFC0001969DE /* Tracking+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DE0FE1E09AFC0001969DE /* Tracking+CoreDataClass.swift */; };
 		7B8DE1071E09AFC0001969DE /* Tracking+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DE0FF1E09AFC0001969DE /* Tracking+CoreDataProperties.swift */; };
 		7B8DE1081E09AFC0001969DE /* PlanEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DE1001E09AFC0001969DE /* PlanEntry+CoreDataClass.swift */; };
@@ -34,8 +36,22 @@
 		F2D2C3EC1E045A510087431E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D2C3EA1E045A510087431E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7B0457051E1185780057F038 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2D2C3D31E045A510087431E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2D2C3DA1E045A510087431E;
+			remoteInfo = Tracksumo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1B6B2BCB21D1B3FFC52D8D63 /* Pods-Tracksumo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tracksumo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tracksumo/Pods-Tracksumo.release.xcconfig"; sourceTree = "<group>"; };
+		7B0457001E1185780057F038 /* TracksumoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TracksumoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B0457021E1185780057F038 /* DateHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelperTests.swift; sourceTree = "<group>"; };
+		7B0457041E1185780057F038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B04570A1E1185AD0057F038 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		7B8DE0FE1E09AFC0001969DE /* Tracking+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tracking+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7B8DE0FF1E09AFC0001969DE /* Tracking+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tracking+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7B8DE1001E09AFC0001969DE /* PlanEntry+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlanEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -67,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7B0456FD1E1185780057F038 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2D2C3D81E045A510087431E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,6 +108,15 @@
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
+		};
+		7B0457011E1185780057F038 /* TracksumoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B0457021E1185780057F038 /* DateHelperTests.swift */,
+				7B0457041E1185780057F038 /* Info.plist */,
+			);
+			path = TracksumoTests;
+			sourceTree = SOURCE_ROOT;
 		};
 		7B8DE10E1E09AFC5001969DE /* DataModel */ = {
 			isa = PBXGroup;
@@ -133,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				F2D2C3DB1E045A510087431E /* Tracksumo.app */,
+				7B0457001E1185780057F038 /* TracksumoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +173,7 @@
 		F2D2C3DD1E045A510087431E /* Tracksumo */ = {
 			isa = PBXGroup;
 			children = (
+				7B0457011E1185780057F038 /* TracksumoTests */,
 				F2ACB9B01E0B0534004D8E75 /* Extensions */,
 				7B8DE10E1E09AFC5001969DE /* DataModel */,
 				F2D2C3DE1E045A510087431E /* AppDelegate.swift */,
@@ -152,6 +186,7 @@
 				F284C9EE1E09BDC300105487 /* AddPlanEntryViewController.swift */,
 				F284C9F01E09C8C100105487 /* SelectActivityTableViewController.swift */,
 				F297C3D01E0B31F200F10597 /* UIActivityCell.swift */,
+				7B04570A1E1185AD0057F038 /* DateHelper.swift */,
 				F2D2C3E81E045A510087431E /* Assets.xcassets */,
 				F2D2C3EA1E045A510087431E /* LaunchScreen.storyboard */,
 				F2D2C3ED1E045A510087431E /* Info.plist */,
@@ -164,6 +199,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7B0456FF1E1185780057F038 /* TracksumoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B0457091E1185780057F038 /* Build configuration list for PBXNativeTarget "TracksumoTests" */;
+			buildPhases = (
+				7B0456FC1E1185780057F038 /* Sources */,
+				7B0456FD1E1185780057F038 /* Frameworks */,
+				7B0456FE1E1185780057F038 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B0457061E1185780057F038 /* PBXTargetDependency */,
+			);
+			name = TracksumoTests;
+			productName = TracksumoTests;
+			productReference = 7B0457001E1185780057F038 /* TracksumoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F2D2C3DA1E045A510087431E /* Tracksumo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2D2C3F01E045A510087431E /* Build configuration list for PBXNativeTarget "Tracksumo" */;
@@ -194,6 +247,11 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Kreskow&Karrmarr DevHeroes";
 				TargetAttributes = {
+					7B0456FF1E1185780057F038 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F2D2C3DA1E045A510087431E;
+					};
 					F2D2C3DA1E045A510087431E = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = YZB6HYGFR3;
@@ -215,11 +273,19 @@
 			projectRoot = "";
 			targets = (
 				F2D2C3DA1E045A510087431E /* Tracksumo */,
+				7B0456FF1E1185780057F038 /* TracksumoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7B0456FE1E1185780057F038 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2D2C3D91E045A510087431E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,6 +348,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7B0456FC1E1185780057F038 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0457031E1185780057F038 /* DateHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2D2C3D71E045A510087431E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,6 +372,7 @@
 				F2ACB9B21E0B054F004D8E75 /* UIViewController+Tracksumo.swift in Sources */,
 				F2D2C3DF1E045A510087431E /* AppDelegate.swift in Sources */,
 				7B8DE10B1E09AFC0001969DE /* Plan+CoreDataProperties.swift in Sources */,
+				7B04570B1E1185AD0057F038 /* DateHelper.swift in Sources */,
 				7B8DE1081E09AFC0001969DE /* PlanEntry+CoreDataClass.swift in Sources */,
 				F284C9F31E09C9D300105487 /* SelectActivityCell.swift in Sources */,
 				F297C3D11E0B31F200F10597 /* UIActivityCell.swift in Sources */,
@@ -310,6 +385,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B0457061E1185780057F038 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2D2C3DA1E045A510087431E /* Tracksumo */;
+			targetProxy = 7B0457051E1185780057F038 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F2D2C3E21E045A510087431E /* Main.storyboard */ = {
@@ -331,6 +414,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7B0457071E1185780057F038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TracksumoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreskow.TracksumoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tracksumo.app/Tracksumo";
+			};
+			name = Debug;
+		};
+		7B0457081E1185780057F038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TracksumoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreskow.TracksumoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tracksumo.app/Tracksumo";
+			};
+			name = Release;
+		};
 		F2D2C3EE1E045A510087431E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -453,6 +564,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7B0457091E1185780057F038 /* Build configuration list for PBXNativeTarget "TracksumoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B0457071E1185780057F038 /* Debug */,
+				7B0457081E1185780057F038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F2D2C3D61E045A510087431E /* Build configuration list for PBXProject "Tracksumo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
